@@ -12,7 +12,7 @@ app.use((req, res, next) => {
   res.setHeader(
     "Access-Control-Allow-Origin",
     // "https://urban-shoes.vercel.app",
-    "http://localhost:3000"
+    "http://localhost:3000","https://urban-shoe-two.vercel.app"
   );
   res.setHeader(
     "Access-Control-Allow-Methods",
@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://urban-shoes.vercel.app"],
+    origin: ["http://localhost:3000", "https://urban-shoes.vercel.app","https://urban-shoe-two.vercel.app"],
     credentials: true,
   })
 );

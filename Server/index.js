@@ -54,9 +54,9 @@ app.listen(PORT, () => {
   console.log(`The server is up and running on port: ${PORT}`);
 });
 
-// app.get('/',(req,res)=>{
-//   return res.json({
-//       success:true,
-//       message:'server is running'
-//   })
-// })
+app.get('/',(req,res)=>{
+  return res.json({
+      success:true,
+      message:'server is running'
+  })
+})
